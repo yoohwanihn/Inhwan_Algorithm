@@ -1,0 +1,12 @@
+class Solution {
+    public int solution(String number) {
+        int answer = 0;
+        char[] ch = number.toCharArray();
+        int sum = 0;
+        for(int i=0;i<ch.length;i++){
+            sum += Character.getNumericValue(ch[i]);
+        }
+        answer = sum%9;
+        return answer;
+    }
+}
