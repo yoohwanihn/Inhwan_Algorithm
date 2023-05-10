@@ -1,3 +1,7 @@
+/*재귀함수를 사용하면 타임아웃
+테스트 케이스가 클수록 동적프로그래밍을 하지 않을시 재귀함수는 지양해야함
+*/
+
 class Solution {
     public int solution(int n) {
         int answer = 0;
@@ -10,5 +14,4 @@ class Solution {
         answer = D[n];
         return answer;
     }
-    
 }
