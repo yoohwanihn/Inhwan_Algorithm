@@ -9,9 +9,7 @@ class Solution {
             answer += my_string.charAt(i);
         }
         answer += sb.reverse().toString();
-        for(int i=e+1;i<my_string.length();i++){
-            answer += my_string.charAt(i);
-        }
+        answer += my_string.substring(e+1);
         return answer;
     }
 }
